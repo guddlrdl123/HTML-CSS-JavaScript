@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <form action="#" method="get">
+            <table border="0">
+                <tr>
+                    <td rowspan="4">
+                        <!-- 사진 -->
+                        <img src="images/캡처.PNG" width="100px" height="140" border="1">
+                    </td>
+                    <td valign="top" rowspan="2">
+                        <!-- 이름 -->
+                        <label for="name"><b>이름 | </b></label>
+                        <input type="text" size="10" id="name" name="name">
+                    </td>
+                    <td align="left">
+                        <!-- 생년월일 -->
+                        <label for="age"><b>생년월일 | </b></label>
+                        <input type="date" id="age" name="age">
+                        <br>================================
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>휴대폰 | </b>
+                        <select>
+                            <option>02</option>
+                            <option>010</option>
+                        </select>
+                        -
+                        <input type="text" size="4">
+                        -
+                        <input type="text" size="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" colspan="2">
+                        =======================================================
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address"><b>현주소 | </b></label>
+                        <input type="text" size="15" id="address" name="address">
+                    </td>
+                    <td>
+                        <label for="eamil"><b>이메일 | </b></label>
+                        <input type="email" size="25" id="eamil" name="eamil">
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" colspan="3">
+                        ===================================================================
+                    </td>
+                </tr>
+            </table>
+            <label for="infro"><b>
+                    <좋아하는 과목>
+                </b></label>
+            <br>
+            <input type="checkbox" id="JAVA" name="infro"><label for="JAVA">JAVA</label>
+            <input type="checkbox" id="DATABASE" name="infro"><label for="DATABASE">DATABASE</label>
+            <input type="checkbox" id="HTML/CSS" name="infro"><label for="HTML/CSS">HTML/CSS</label>
+            <input type="checkbox" id="SPRING" name="infro"><label for="SPRING">SPRING</label>
+            <input type="checkbox" id="REACT/NEXTJS" name="infro"><label for="REACT/NEXTJS">REACT/NEXTJS</label>
+            <br>
+            ===================================================================
+            <br>
+            <label for="education"><b>
+                    <학력사항>
+                </b></label>
+            <br>
+            졸업일 <input type="date" name="education" id="education">
+            학교명 <input type="text" name="education" size="10" id="education" name="education">
+            전공 <input type="text" name="education" size="10" id="education" name="education">
+            <input type="checkbox" name="education" id="education"> 졸업여부
+            <br>
+            소재지 <input type="text" name="education" size="10" id="education" name="education">
+            &nbsp;성적 <input type="text" name="education" size="3" id="education" name="education">
+            <br>
+            ===================================================================
+            <br>
+            <label for="car"><b>
+                    <경력사항>
+                </b></label>
+            <br>
+            <textarea rows="10" cols="80" id="car"></textarea>
+            <br>
+            ===================================================================
+            <br>
+            <label for="intro"><b>
+                    <자기소개>
+                </b></label>
+            <br>
+            <textarea rows="10" cols="80" id="intro"></textarea>
+            <br>
+            ===================================================================
+            <br>
+            <label for="hobby"><b>
+                    <취미>
+                </b></label>
+            <br>
+            <textarea rows="10" cols="80" id="hobby"></textarea>
+            <br>
+            ===================================================================
+            <br>
+            <table>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="submit" value="저장">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <input type="button" value="취소">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </center>
+</body>
+
+</html>
