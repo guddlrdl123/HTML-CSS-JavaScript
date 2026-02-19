@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인접 선택자</title>
+    <style>
+        body {
+            font-size: 0.75rem;
+        }
+
+        article {
+            border: 1px solid brown;
+            margin: 10px auto;
+        }
+
+        .main {
+            background-color: gray;
+        }
+
+        /* 인접 선택자 (순서는 아래에 있는 것만 적용)*/
+        article h1+section {
+            color: blueviolet;
+        }
+
+        section p+p {
+            color: cadetblue;
+        }
+
+        h1+section+section h2 {
+            color: green;
+            text-decoration: line-through;
+        }
+
+        /* 형제 자매 선택자 */
+        /* article~article은 article 다음에 같은 위치에 있는 article */
+        article~article h2 {
+            color: red;
+            background-color: black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <h1>첫 번째 본문 제목</h1>
+        <section>
+            <h2>소제목1</h2>
+            <p>section 내용1</p>
+            <p>section 내용2</p>
+        </section>
+        <section>
+            <h2>소제목2</h2>
+            <p>section 내용2</p>
+            <p>section 내용2-1</p>
+        </section>
+        <section>
+            <h2>소제목3</h2>
+            <p>section 내용3</p>
+        </section>
+    </article>
+
+    <article>
+        <h1>두 번째 본문 제목</h1>
+        <section>
+            <h2>소제목1</h2>
+            <p>section 내용1</p>
+        </section>
+        <section>
+            <h2>소제목2</h2>
+            <p>section 내용2</p>
+        </section>
+        <section>
+            <h2>소제목3</h2>
+            <p>section 내용3</p>
+        </section>
+    </article>
+    <div class="main">
+        <section>
+            <h2>여기가 메인</h2>
+            <p>메인 section</p>
+        </section>
+    </div>
+    <article>
+        <h1>세 번째 본문 제목</h1>
+        <section>
+            <h2>소제목1</h2>
+            <p>section 내용1</p>
+        </section>
+        <section>
+            <h2>소제목2</h2>
+            <p>section 내용2</p>
+        </section>
+        <section>
+            <h2>소제목3</h2>
+            <p>section 내용3</p>
+        </section>
+    </article>
+</body>
+
+</html>
