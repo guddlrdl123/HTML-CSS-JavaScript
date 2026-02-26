@@ -1,6 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="jakarta.tags.core"%>
 <%@ taglib prefix="fmt" uri="jakarta.tags.fmt"%>
+<%
+    // 1. EL은 로컬 변수을 읽지 못하고, page, request, session 등과 같은 context의 값을
+    // 읽어서 처리하게 만들어져 있어서 바로 접근은 불가능. 때문에 아래와 같이 사용
+    pageContext.setAttribute("name", "홍길동");
+    
+    // 2. 로컬로 선언한 후에 jstl을 이용한 설정.
+    String name2 = "홍길동2";
+    
+%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,8 +25,15 @@
             <br>
             <c:out value="출력할 내용"></c:out>
                 <br>
-                <c:if test="true">
+                pageContext 저장된 name 값 : ${pageScope.name}
+                <br>
+                <c:if test='${name.equals("홍길동")}'>
                     if가 true 인 경우에 실행됩니다.
                 </c:if>
-            </body>
-        </html>
+                <%-- String name2 로컬 변수의 값을 변수 선언해서 pageContext로 등록 선언 --%>
+                <c:set var="name2" value="<%= name2%>"></c:set>
+                    <br>
+                    ${name2}
+
+                </body>
+            </html>
